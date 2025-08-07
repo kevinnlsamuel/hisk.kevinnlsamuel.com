@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	<head>
+			<title>Les couleurs</title><meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="description" content="">
+		<link rel="stylesheet" href="/style.css">
+		
+		<script type="module">
+			window.addEventListener("beforeprint", (e) => {
+				const scriptEle = Object.assign(
+					document.createElement("script"),
+					{
+						src: '/assets/paged.polyfill.js'
+					}
+				)
+				document.head.appendChild(scriptEle);
+			})
+		</script>
+		
+	</head>
+	<body class="grid">
+		
+<header class="grid gap-4 text-md">
+	<table class="mx-auto w-11/12 font-bold text-center table-fixed">
+		<tr><td colspan="6"><img class="print:h-32 print:w-auto w-1/2 my-2 mx-auto" src="/assets/image/header.jpg">
+</td></tr>
+		<tr class="my-2 text-center font-bold"><td colspan="6">Primary French (2024&ndash;2025)</td></tr>
+		<tr>
+	</table>
+		<p class="text-center text-sm bg-red-300 italic text-white w-max p-2 mx-auto">
+		For reference only. Not to be printed unnecessarily. <span class="not-italic">🌳</span>
+		</p>
+	
+
+</header>
+<hr class="border-black border w-3/5 my-4 mx-auto border-dashed"/>
+
+<main>
+	<header>
+		<h1 class="font-bold text-center text-2xl md:text-3xl">Les couleurs</h1></header>
+	<table class="border border-black text-lg break-inside-avoid-page mx-auto">
+<thead>
+    <th class="text-center p-2 font-normal border-r border-slate-700">Couleur</th>
+    <th class="text-center p-2 font-normal">Nom</th>
+</thead>
+<tbody class="break-inside-avoid-page"><tr class="border border-black">
+        <td style="background-color: hsl(0,100%,50%)" class="border-r border-slate-700"></td>
+<p><td class="p-2"><span style="color: hsl(0,100%,50%)" class="font-bold">rouge</span></td></p>
+<p><td class="border-r border-slate-700"><button  data-src="/assets/audio/voice/rouge.ogg" class="audiotrigger">🔉</button></td>
+</tr><tr class="border border-black">
+<td style="background-color: hsl(240,100%,50%)" class="border-r border-slate-700"></td></p>
+<p><td class="p-2"><span style="color: hsl(240,100%,50%)" class="font-bold">bleu</span></td></p>
+<p><td class="border-r border-slate-700"><button  data-src="/assets/audio/voice/bleu.ogg" class="audiotrigger">🔉</button></td>
+</tr><tr class="border border-black">
+<td style="background-color: hsl(120,100%,40%)" class="border-r border-slate-700"></td></p>
+<p><td class="p-2"><span style="color: hsl(120,100%,40%)" class="font-bold">vert</span></td></p>
+<p><td class="border-r border-slate-700"><button  data-src="/assets/audio/voice/vert.ogg" class="audiotrigger">🔉</button></td>
+</tr><tr class="border border-black">
+<td style="background-color: rgb(252,15,192)" class="border-r border-slate-700"></td></p>
+<p><td class="p-2"><span style="color: rgb(252,15,192)" class="font-bold">rose</span></td></p>
+<p><td class="border-r border-slate-700"><button  data-src="/assets/audio/voice/rose.ogg" class="audiotrigger">🔉</button></td>
+</tr><tr class="border border-black">
+<td style="background-color: hsl(60,100%,50%)" class="border-r border-slate-700"></td></p>
+<p><td class="p-2"><span style="color: hsl(60,100%,50%)" class="font-bold drop-shadow-[1px_1px_2px_rgba(0,0,0,.7)]">jaune</span></td></p>
+<p><td class="border-r border-slate-700"><button  data-src="/assets/audio/voice/jaune.ogg" class="audiotrigger">🔉</button></td>
+</tr><tr class="border border-black">
+<td style="background-color: hsl(30,100%,50%)" class="border-r border-slate-700"></td></p>
+<p><td class="p-2"><span style="color: hsl(30,100%,50%)" class="font-bold">orange</span></td></p>
+<p><td class="border-r border-slate-700"><button  data-src="/assets/audio/voice/orange.ogg" class="audiotrigger">🔉</button></td>
+</tr><tr class="border border-black">
+<td style="background-color: hsl(0,0%,100%)" class="border-r border-slate-700"></td></p>
+<p><td class="p-2"><span style="color: hsl(0,0%,100%)" class="font-bold drop-shadow-[1px_1px_2px_rgba(0,0,0,.7)]">blanc</span></td></p>
+<p><td class="border-r border-slate-700"><button  data-src="/assets/audio/voice/blanc.ogg" class="audiotrigger">🔉</button></td>
+</tr><tr class="border border-black">
+<td style="background-color: hsl(0,0%,0%)" class="border-r border-slate-700"></td></p>
+<p><td class="p-2"><span style="color: hsl(0,0%,0%)" class="font-bold">noir</span></td></p>
+<p><td class="border-r border-slate-700"><button  data-src="/assets/audio/voice/noir.ogg" class="audiotrigger">🔉</button></td>
+</tr></tbody></p>
+</table>
+
+</main>
+<footer>
+</footer>
+
+		
+		<audio src="" id="audioplayer" class="hidden">
+		<script src="/script/audiotrigger.js" type="module"></script>
+		
+	</body>
+</html>

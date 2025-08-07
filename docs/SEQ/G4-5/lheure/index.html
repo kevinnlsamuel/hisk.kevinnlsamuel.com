@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+	<head>
+			<title>Il est quelle heure ?</title><meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="description" content="">
+		<link rel="stylesheet" href="/style.css">
+		
+		<script type="module">
+			window.addEventListener("beforeprint", (e) => {
+				const scriptEle = Object.assign(
+					document.createElement("script"),
+					{
+						src: '/assets/paged.polyfill.js'
+					}
+				)
+				document.head.appendChild(scriptEle);
+			})
+		</script>
+		
+	</head>
+	<body class="grid">
+		
+<header class="grid gap-4 text-md">
+	<table class="mx-auto w-11/12 font-bold text-center table-fixed">
+		<tr><td colspan="6"><img class="print:h-32 print:w-auto w-1/2 my-2 mx-auto" src="/assets/image/header.jpg">
+</td></tr>
+		<tr class="my-2 text-center font-bold"><td colspan="6">Primary French (2024&ndash;2025)</td></tr>
+		<tr>
+	</table>
+		<p class="text-center text-sm bg-red-300 italic text-white w-max p-2 mx-auto">
+		For reference only. Not to be printed unnecessarily. <span class="not-italic">🌳</span>
+		</p>
+	
+
+</header>
+<hr class="border-black border w-3/5 my-4 mx-auto border-dashed"/>
+
+<main>
+	<header>
+		<h1 class="font-bold text-center text-2xl md:text-3xl">Il est quelle heure ?</h1></header>
+	<article class="mt-6 space-y-8 w-min mx-auto">
+<section class="w-max mx-auto grid grid-cols-2 gap-2 items-center">
+<div>
+<p><strong>Jean</strong>: Il est quelle heure ?</p>
+<p><strong>Marie</strong>: Il est neuf heures.</p>
+</div>
+<img width="200px" src="/assets/image/clock_9h.svg" alt="a clock showing 9 o clock" class="order-last">
+</section>
+<section class="w-max mx-auto grid grid-cols-2 gap-2 items-center">
+<div>
+<p><strong>Nadia</strong>: Il est quelle heure ?</p>
+<p><strong>Luc</strong>: Il est treize heures dix.</p>
+</div>
+<img width="200px" src="/assets/image/clock_13h10.svg" alt="a clock showing 1:10" class="order-first" >
+</section>
+<section>
+<h1 class="font-bold text-lg">Les unités de temps</h1>
+<ul>
+<li>Il y a <strong>sept jours</strong> dans une <strong>semaine</strong>.</li>
+<li>Dans <strong>un jour</strong>, il y a <strong>vingt-quatre heures</strong>.</li>
+<li>Dans <strong>une heure</strong>, il y a <strong>soixante minutes</strong>.</li>
+</ul>
+<details>
+<summary class="px-2 w-max bg-slate-400">Plus simple</summary>
+<ul>
+<li>une semaine = 7 jours</li>
+<li>un jour = 24 heures</li>
+<li>une heure = 60 minutes</li>
+</ul>
+</details>
+</section>
+<section class="space-y-2">
+<h1 class="font-bold text-lg">24-hour Clock</h1>
+<p>Generally, in French, you divide the entire day into 24 hours.</p>
+<p>In English, the day is usually referred to as two sections of 12 hours each (a.m and p.m.) before and after noon (12 p.m.).</p>
+<p>However, in French, the time is <strong>treize heures</strong> after <strong>midi</strong>. And <strong>vingt-trois heures</strong> just before <strong>minuit</strong>.</p>
+<h2 class="font-bold mt-4">How do you get this number easily?</h2>
+<h3 class="font-bold text-sm">12-hour format → 24-hour format</h3>
+<ul>
+<li>If the time is in p.m. add 12 (afternoon)</li>
+<li>e.g. 11 + 12 = 23</li>
+</ul>
+<h3 class="font-bold text-sm">24-hour format → 12-hour format</h3>
+<ul>
+<li>Subtract 12 if the number is greater than 12</li>
+<li>e.g. 13 - 12 = 1</li>
+<li>It is a time after noon, so 1 p.m.</li>
+</ul>
+</section>
+<section>
+<h1 class="font-bold text-lg">L'heure en français</h1>
+<ul>
+<li class="list-disc list-inside">Il est <em>H</em> heures <em>M</em>.</li>
+<li class="list-disc list-inside">Il est midi.</li>
+<li class="list-disc list-inside">Il est minuit.</li>
+</ul>
+<p class="text-sm text-slate-500"><strong>NB</strong>: Il existe d'autres formats, mais c'est pour un autre jour.</p>
+</section>
+<section>
+<h1 class="flex gap-2 items-center font-bold text-lg">La pratique<button aria-label="go fullscreen" title="go fullscreen" class="text-sm" onclick="document.getElementById('clock').requestFullscreen()">⛶</button>
+</h1>
+<embed id="clock" src="https://www.online-stopwatch.com/html5/number-pickers/random-time/" >
+<p>Source: <a href="https://online-stopwatch.com" class="text-xs italic">online-stopwatch.com</a></p>
+</article>
+
+</main>
+<footer>
+</footer>
+
+		
+	</body>
+</html>
